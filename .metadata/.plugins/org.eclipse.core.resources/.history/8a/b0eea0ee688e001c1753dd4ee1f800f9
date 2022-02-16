@@ -1,0 +1,9 @@
+package com.sinhgad.managements.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.sinhgad.managements.entity.Student;
+
+public interface StudentRepositoy extends JpaRepository<Student,Integer>{
+
+}

@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+package com.sinhgad.managements.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sinhgad.managements.dao.StudentRepositoy;
+import com.sinhgad.managements.entity.Student;
+
+/**
+ * @author patil_ha
+ *
+ */
+@Service
+public class StudentServiceImpl implements StudentService {
+
+	@Autowired
+	StudentRepositoy studentRepository;
+	
+	@Override
+	public Student registerNewStudent(Student student) {
+		
+		return studentRepository.save(student);
+	}
+
+	@Override
+	public List<Student> fetchAllStudent() {
+		// TODO Auto-generated method stub
+		return studentRepository.findAll();
+	}
+	
+	
+
+}

@@ -1,0 +1,9 @@
+package com.sinhgad.managements.service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="student-service")
+public interface StudentServiceProxy {
+
+	
+}

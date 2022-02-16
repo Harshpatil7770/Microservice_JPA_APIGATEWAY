@@ -1,0 +1,36 @@
+package com.sinhgad.managements.resource;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.sinhgad.managements.entity.Student;
+import com.sinhgad.managements.entity.Teacher;
+import com.sinhgad.managements.service.TeacherServiceImpl;
+
+@RestController
+@RequestMapping("/api/teacher")
+public class TeacherResource {
+
+	@Autowired
+	TeacherServiceImpl teacherServiceImpl;
+	
+	@PostMapping("/register/newteacher")
+	public Teacher registerTeacher(@RequestBody Teacher teacher) {
+		return teacherServiceImpl.registerTeacher(teacher);
+	}
+	
+	@GetMapping("/fetchallstudents")
+	public List<Student> fetchAllStudent(){
+		return teacherServiceImpl.fetchAllStudent();
+	}
+	
+	public Student registerNewStudent(Student student) {
+		return teacherServiceImpl.registerNewStudent(student);
+	}
+}

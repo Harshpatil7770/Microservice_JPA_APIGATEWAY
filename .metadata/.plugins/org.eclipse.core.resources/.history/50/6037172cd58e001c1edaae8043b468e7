@@ -1,0 +1,5 @@
+package com.sinhgad.managements.entity;
+
+public class Student {
+
+}

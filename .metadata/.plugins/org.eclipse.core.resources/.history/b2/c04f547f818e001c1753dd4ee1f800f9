@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package com.sinhgad.managements.service;
+
+import com.sinhgad.managements.entity.Student;
+
+/**
+ * @author patil_ha
+ *
+ */
+public class StudentServiceImpl implements StudentService {
+
+	@Override
+	public Student registerNewStudent(Student student) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

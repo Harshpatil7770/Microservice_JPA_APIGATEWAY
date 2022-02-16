@@ -1,0 +1,5 @@
+package com.sinhgad.managements.service;
+
+public interface TeacherService {
+
+}

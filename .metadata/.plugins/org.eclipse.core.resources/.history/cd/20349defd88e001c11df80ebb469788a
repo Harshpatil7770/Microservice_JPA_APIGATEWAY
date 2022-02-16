@@ -1,0 +1,8 @@
+package com.sinhgad.managements.service;
+
+import com.sinhgad.managements.entity.Teacher;
+
+public interface TeacherService {
+
+	Teacher registerTeacher(Teacher teacher);
+}

@@ -1,0 +1,8 @@
+package com.sinhgad.managements.service;
+
+import com.sinhgad.managements.entity.Student;
+
+public interface StudentService {
+
+	 Student registerNewStudent(Student student);
+}
